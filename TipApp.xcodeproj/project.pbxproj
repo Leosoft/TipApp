@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9435F4152AB20E880094DFFF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9435F4142AB20E880094DFFF /* Launch Screen.storyboard */; };
 		948E69252AB1F0240006EF21 /* TipAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E69242AB1F0240006EF21 /* TipAppApp.swift */; };
 		948E69272AB1F0240006EF21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E69262AB1F0240006EF21 /* ContentView.swift */; };
 		948E69292AB1F0250006EF21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 948E69282AB1F0250006EF21 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9435F4142AB20E880094DFFF /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		948E69212AB1F0240006EF21 /* TipApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		948E69242AB1F0240006EF21 /* TipAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipAppApp.swift; sourceTree = "<group>"; };
 		948E69262AB1F0240006EF21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				948E69262AB1F0240006EF21 /* ContentView.swift */,
 				948E69282AB1F0250006EF21 /* Assets.xcassets */,
 				948E692A2AB1F0250006EF21 /* Preview Content */,
+				9435F4142AB20E880094DFFF /* Launch Screen.storyboard */,
 			);
 			path = TipApp;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9435F4152AB20E880094DFFF /* Launch Screen.storyboard in Resources */,
 				948E692C2AB1F0250006EF21 /* Preview Assets.xcassets in Resources */,
 				948E69292AB1F0250006EF21 /* Assets.xcassets in Resources */,
 			);
@@ -466,6 +470,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -497,6 +502,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

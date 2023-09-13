@@ -44,7 +44,7 @@ struct TipCalculatorView: View {
                     Text("$\(tipAmount, specifier: "%.2f")")
                 }
             }
-            .navigationBarTitle("Calculadora de Propinas")
+            .navigationBarTitle("Tip Calculate")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
@@ -89,6 +89,7 @@ struct TipCalculatorView: View {
                 }
             }
         }
+        /*
         .background(
             LinearGradient(
                 gradient: Gradient(stops: [
@@ -99,7 +100,7 @@ struct TipCalculatorView: View {
                 endPoint: .bottom
             )
             .edgesIgnoringSafeArea(.all)
-        )
+        )*/
     }
 }
 

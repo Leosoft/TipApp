@@ -16,8 +16,8 @@ struct WelcomeView: View {
                 // Agregar el fondo degradado aquí
                 LinearGradient(
                     gradient: Gradient(stops: [
-                        Gradient.Stop(color: Color(red: 1, green: 0.4, blue: 0.27), location: 0.00),
-                        Gradient.Stop(color: Color(red: 1, green: 0.19, blue: 0.19), location: 1.00)
+                        Gradient.Stop(color: Color.blue, location: 0.00), // Color azul
+                                Gradient.Stop(color: Color.blue, location: 1.00)  // Color azul
                     ]),
                     startPoint: .top,
                     endPoint: .bottom
@@ -25,7 +25,7 @@ struct WelcomeView: View {
                 .edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                    Text("Welcome to TipApp")
+                    Text("CALCULATE TIPS")
                         .font(.custom("Apple Chancery", size: 20))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
@@ -36,9 +36,9 @@ struct WelcomeView: View {
                     }) {
                         Image(systemName: "play.fill")
                             .font(.system(size: 40))
-                            .foregroundColor(.white)
+                            .foregroundColor(.blue)
                             .padding()
-                            .background(Color.blue)
+                            .background(Color.white)
                             .clipShape(Circle())
                     }
                     .padding(.top, 20) // Espacio entre el texto y el botón
