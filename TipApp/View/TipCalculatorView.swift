@@ -52,7 +52,7 @@ struct TipCalculatorView: View {
                         isAppClosed = true
                     }) {
                         Text("Cerrar")
-                            .foregroundColor(.white)
+                            .foregroundColor(.blue)
                     }
                     .fullScreenCover(isPresented: $isAppClosed, content: {
                         // Vista de confirmación antes de cerrar la aplicación
