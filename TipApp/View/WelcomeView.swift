@@ -1,10 +1,3 @@
-//
-//  WelcomeView.swift
-//  TipApp
-//
-//  Created by Leonardo Zabala on 13/09/2023.
-//
-
 import SwiftUI
 
 struct WelcomeView: View {
@@ -26,7 +19,7 @@ struct WelcomeView: View {
                 
                 VStack {
                     Text("CALCULATE TIPS")
-                        .font(.custom("Apple Chancery", size: 20))
+                        .font(.custom("Silkscreen", size: 40))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                     

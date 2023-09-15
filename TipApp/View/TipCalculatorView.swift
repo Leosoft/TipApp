@@ -13,10 +13,15 @@ struct TipCalculatorView: View {
         totalAmount * presenter.model.tipPercentage
     }
     
+    var tipPerPerson: Double {
+            let totalTip = totalAmount * presenter.model.tipPercentage
+            return totalTip / Double(presenter.model.numberOfPeople)
+        }
+    
     var body: some View {
         NavigationView {
             Form {
-                Section(header: Text("Monto de la cuenta")) {
+                Section(header: Text("Total Amount")) {
                     HStack {
                         Text("$")
                             .foregroundColor(.primary)
@@ -25,7 +30,7 @@ struct TipCalculatorView: View {
                     }
                 }
                 
-                Section(header: Text("Porcentaje de propina")) {
+                Section(header: Text("Tip Percentage")) {
                     Picker("Porcentaje", selection: $presenter.model.tipPercentage) {
                         Text("10%").tag(0.10)
                         Text("15%").tag(0.15)
@@ -34,34 +39,38 @@ struct TipCalculatorView: View {
                     .pickerStyle(SegmentedPickerStyle())
                 }
                 
-                Section(header: Text("Cantidad de personas")) {
+                Section(header: Text("Amount of people")) {
                     Stepper(value: $presenter.model.numberOfPeople, in: 1...10) {
                         Text("\(presenter.model.numberOfPeople)")
                     }
                 }
                 
-                Section(header: Text("Total de propina")) {
+                Section(header: Text("Tip Amount")) {
                     Text("$\(tipAmount, specifier: "%.2f")")
                 }
+                Section(header: Text("Tip Per Person")) {
+                                    Text("$\(tipPerPerson, specifier: "%.2f") per person")
+                                        .foregroundColor(.blue)
+                                }
             }
-            .navigationBarTitle("Tip Calculate")
+            .navigationBarTitle("Calculate Tips")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                         // Acción para cerrar la aplicación
                         isAppClosed = true
                     }) {
-                        Text("Cerrar")
+                        Text("Close")
                             .foregroundColor(.blue)
                     }
                     .fullScreenCover(isPresented: $isAppClosed, content: {
                         // Vista de confirmación antes de cerrar la aplicación
                         VStack {
                             ZStack{
-                                Color.blue
+                                Color.white
                                     .edgesIgnoringSafeArea(.all)
                                 VStack{
-                                    Text("¿Desea cerrar la aplicación?")
+                                    Text("¿Are You Sure?")
                                         .font(.title)
                                         .padding()
                                         .foregroundColor(.primary)
@@ -71,17 +80,17 @@ struct TipCalculatorView: View {
                                             UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
                                             exit(0)
                                         }) {
-                                            Text("Aceptar")
+                                            Text("Yes")
                                                 .padding()
-                                                .background(Color.white)
-                                                .foregroundColor(.black)
+                                                .background(Color.blue)
+                                                .foregroundColor(.white)
                                                 .cornerRadius(10)
                                         }
                                         
                                         Button(action: {
                                             isAppClosed = false // Cierra la vista de confirmación
                                         }) {
-                                            Text("Cancelar")
+                                            Text("No")
                                                 .padding()
                                                 .background(Color.red)
                                                 .foregroundColor(.white)

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9425A1502AB4983000D81499 /* SplitCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9425A14F2AB4983000D81499 /* SplitCalculator.swift */; };
 		9435F4152AB20E880094DFFF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9435F4142AB20E880094DFFF /* Launch Screen.storyboard */; };
 		948E69252AB1F0240006EF21 /* TipAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E69242AB1F0240006EF21 /* TipAppApp.swift */; };
 		948E69272AB1F0240006EF21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E69262AB1F0240006EF21 /* ContentView.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9425A14F2AB4983000D81499 /* SplitCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitCalculator.swift; sourceTree = "<group>"; };
 		9435F4142AB20E880094DFFF /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		948E69212AB1F0240006EF21 /* TipApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		948E69242AB1F0240006EF21 /* TipAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipAppApp.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				948E69512AB1F0A90006EF21 /* TipCalculatorModel.swift */,
+				9425A14F2AB4983000D81499 /* SplitCalculator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			files = (
 				948E69522AB1F0A90006EF21 /* TipCalculatorModel.swift in Sources */,
 				948E69582AB1F1660006EF21 /* WelcomeView.swift in Sources */,
+				9425A1502AB4983000D81499 /* SplitCalculator.swift in Sources */,
 				948E69562AB1F0F30006EF21 /* TipCalculatorView.swift in Sources */,
 				948E69272AB1F0240006EF21 /* ContentView.swift in Sources */,
 				948E69542AB1F0CD0006EF21 /* TipCalculatorPresenter.swift in Sources */,
