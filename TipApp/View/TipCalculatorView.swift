@@ -57,35 +57,42 @@ struct TipCalculatorView: View {
                     .fullScreenCover(isPresented: $isAppClosed, content: {
                         // Vista de confirmación antes de cerrar la aplicación
                         VStack {
-                            Text("¿Desea cerrar la aplicación?")
-                                .font(.title)
-                                .padding()
-                                .foregroundColor(.primary)
-                            HStack {
-                                Button(action: {
-                                    // Cierra la aplicación
-                                    UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-                                    exit(0)
-                                }) {
-                                    Text("Aceptar")
+                            ZStack{
+                                Color.blue
+                                    .edgesIgnoringSafeArea(.all)
+                                VStack{
+                                    Text("¿Desea cerrar la aplicación?")
+                                        .font(.title)
                                         .padding()
-                                        .background(Color.blue)
-                                        .foregroundColor(.white)
-                                        .cornerRadius(10)
-                                }
-                                
-                                Button(action: {
-                                    isAppClosed = false // Cierra la vista de confirmación
-                                }) {
-                                    Text("Cancelar")
-                                        .padding()
-                                        .background(Color.red)
-                                        .foregroundColor(.white)
-                                        .cornerRadius(10)
+                                        .foregroundColor(.primary)
+                                    HStack {
+                                        Button(action: {
+                                            // Cierra la aplicación
+                                            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                                            exit(0)
+                                        }) {
+                                            Text("Aceptar")
+                                                .padding()
+                                                .background(Color.white)
+                                                .foregroundColor(.black)
+                                                .cornerRadius(10)
+                                        }
+                                        
+                                        Button(action: {
+                                            isAppClosed = false // Cierra la vista de confirmación
+                                        }) {
+                                            Text("Cancelar")
+                                                .padding()
+                                                .background(Color.red)
+                                                .foregroundColor(.white)
+                                                .cornerRadius(10)
+                                        }
+                                    }
                                 }
                             }
                         }
-                    })
+                        })
+                    
                 }
             }
         }

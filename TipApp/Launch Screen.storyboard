@@ -29,7 +29,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon-App-29x29" translatesAutoresizingMaskIntoConstraints="NO" id="Kcp-ab-Wt5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1024" translatesAutoresizingMaskIntoConstraints="NO" id="Kcp-ab-Wt5">
                                 <rect key="frame" x="0.0" y="-10" width="393" height="880"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="AccentColor"/>
@@ -54,7 +54,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Icon-App-29x29" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="1024" width="1024" height="1024"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

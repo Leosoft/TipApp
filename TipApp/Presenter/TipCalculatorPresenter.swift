@@ -15,5 +15,6 @@ class TipCalculatorPresenter: ObservableObject {
     @Published var model = TipCalculatorModel()
     
     // Lógica de presentación y actualización del modelo
+    
 }
 

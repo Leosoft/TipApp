@@ -19,4 +19,5 @@ struct TipCalculatorModel{
     var numberOfPeople: Int = 1
     var roundingOption:RoundingOption = .none
     
+    
 }
